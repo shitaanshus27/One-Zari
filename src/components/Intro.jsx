@@ -7,11 +7,11 @@ const Intro = () => {
   return (
     <div id="aboutus" className="md:w-[1280px] mx-auto mt-4 relative">
       <div className="w-full">
-        <h1 className="text-black text-center font-mullish text-5xl">
+        <h1 className="text-black text-center font-mullish md:text-5xl text-3xl">
           About Us
         </h1>
         <div className="mt-1 w-1/4 h-1 mx-auto bg-red-500"></div>
-        <h1 className="text-black text-center font-mullish text-5xl mt-4">
+        <h1 className="text-black text-center font-mullish md:text-5xl text-3xl mt-4">
           <span className="inline-block bg-gradient-to-r from-purple-400 to-pink-500 text-transparent bg-clip-text">
             Elevate Your Style
           </span>{" "}
@@ -30,7 +30,7 @@ const Intro = () => {
           Explore our curated selection and discover the perfect Kurti to
           elevate your style and make a lasting impression.
         </p>
-        <div className="h-[200px]"></div>
+        <div className="md:h-[200px] h-[50px]"></div>
         <div className="absolute left-[50%] grid w-[100%] translate-x-[-50%] translate-y-[-30%] grid-cols-3 gap-3 lg:gap-5">
           <img src={photo1} alt="Photos2" />
           <img src={photo2} alt="Photos1" />

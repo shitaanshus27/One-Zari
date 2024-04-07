@@ -12,7 +12,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Brand Image"
-            className="md:w-[70%] w-full"
+            className="md:w-[70%] w-1/2 mt-2"
             height={32}
             loading="lazy"
           />
@@ -33,12 +33,14 @@ const Navbar = () => {
               <div className="h-1 w-100 group-hover:block hidden bg-red-500"></div>
             </li>
           </ScrollIntoView>
-          <li className="group">
-            <Link to={"/Our Vision"} className="group-hover:text-red-500">
-              Our Vision
-            </Link>
-            <div className="h-1 w-100 group-hover:block hidden bg-red-500"></div>
-          </li>
+          <ScrollIntoView selector="#ourvision">
+            <li className="group">
+              <Link to={"/Our Vision"} className="group-hover:text-red-500">
+                Our Vision
+              </Link>
+              <div className="h-1 w-100 group-hover:block hidden bg-red-500"></div>
+            </li>
+          </ScrollIntoView>
           <ScrollIntoView selector="#ourproducts">
             <li className="group">
               <Link to={"/Our Products"} className="group-hover:text-red-500">
@@ -47,6 +49,7 @@ const Navbar = () => {
               <div className="h-1 w-100 group-hover:block hidden bg-red-500"></div>
             </li>
           </ScrollIntoView>
+
           {/* <li>
             <Link to={"/Testimonials"}>Testimonials</Link>
           </li> */}
@@ -58,7 +61,7 @@ const Navbar = () => {
             Contact Us
           </button>
         </Link>
-        <GiHamburgerMenu className="md:hidden" />
+        <GiHamburgerMenu className="md:hidden mr-2" />
       </div>
     </div>
   );

@@ -5,6 +5,9 @@ import Hero from "./components/Hero";
 import Aboutus from "./components/Aboutus";
 import Intro from "./components/Intro";
 import Products from "./components/Products";
+import OurVision from "./components/OurVision";
+import OurTeam from "./components/OurTeam";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +22,12 @@ function App() {
       <Intro />
       {/* Products */}
       <Products />
+      {/* Our Vision */}
+      <OurVision />
+      {/* Our Team */}
+      <OurTeam />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

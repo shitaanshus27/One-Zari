@@ -32,8 +32,8 @@ const Products = () => {
   return (
     <div id="ourproducts" className="w-full p-6 bg-red-200">
       <div className="md:w-[1280px] mx-auto md:h-auto">
-        <div className="h-[450px]"></div>
-        <h1 className="text-black text-center font-mullish text-5xl">
+        <div className="md:h-[450px] h-[100px]"></div>
+        <h1 className="text-black text-center font-mullish md:text-5xl text-3xl">
           Our Products
         </h1>
         <div className="mt-1 w-1/4 h-1 mx-auto bg-red-500"></div>
